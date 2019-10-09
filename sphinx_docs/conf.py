@@ -24,7 +24,7 @@ author = 'oopsmonk'
 # -- General configuration ---------------------------------------------------
 
 if os.environ.get('READTHEDOCS', None) == 'True':
-  subprocess.call(['doxygen', 'Doxyfile'])
+  subprocess.call('doxygen')
 
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
@@ -46,7 +46,7 @@ primary_domain = 'c'
 
 breathe_default_project = 'Entangled'
 breathe_domain_by_extension = {'h' : 'c'}
-breathe_projects = { 'Entangled': '../out/xml/' }
+breathe_projects = { 'Entangled': './doxygen/xml/' }
 
 
 # -- Options for HTML output -------------------------------------------------
