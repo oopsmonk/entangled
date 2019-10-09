@@ -24,7 +24,10 @@ author = 'oopsmonk'
 # -- General configuration ---------------------------------------------------
 
 if os.environ.get('READTHEDOCS', None) == 'True':
-  subprocess.call('doxygen')
+  subprocess.call(['doxygen', '../Doxyfile'])
+  breathe_projects = { 'Entangled': './out/xml/' }
+else:
+  breathe_projects = { 'Entangled': '../out/xml/' }
 
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
@@ -39,10 +42,11 @@ templates_path = ['_templates']
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
+# fixed "contents.rst not found" on RTD.
+master_doc = 'index'
 highlight_language = 'c'
 primary_domain = 'c'
 
-breathe_projects = { 'Entangled': '../out/xml/' }
 breathe_default_project = 'Entangled'
 breathe_domain_by_extension = {'h' : 'c'}
 
