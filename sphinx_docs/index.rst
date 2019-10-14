@@ -11,14 +11,16 @@
 Welcome to IOTA Entangled's documentation!
 ==========================================
 
-Entangled is a monorepo containing all you need to get [IOTA] operating in C/C++
+Entangled is a monorepo containing all you need to get IOTA operating in C/C++
 Containing IOTA components, models as well as cryptography primitives used in IOTA.
 
 Applications: 
+
 - Tanglescope: A monitoring tool for the Tangle
 - MAM: A low level implementation for MAM
 - CIRI: A low level implementation of IOTA node largely inspired by IRI
-- CClient: A low level IOTA client implementation
+- :doc:`cclient`: A low level IOTA client implementation
+
 
 .. toctree::
    :maxdepth: 2

@@ -1,7 +1,23 @@
 IOTA CClient Library
 ======================
 
-An IOTA client library implementation in C language.
+An IOTA client library implementation in C language, aka iota.c. 
+The C library is able to run on a small device that supports full TCP/IP stack. 
+
+`CClient Github`_
+
+Example projects for IoT application: 
+
+* `iota_esp32_wallet`_: IOTA Wallet application.
+* `iota_esp32_cashier`_: A portable payment device.
+* `tangle_pigeon_esp32`_: TanglePigeon carries a message to the Tangle.
+
+
+.. _CClient Github: https://github.com/iotaledger/entangled/tree/develop/cclient
+.. _iota_esp32_wallet: https://github.com/oopsmonk/iota_esp32_wallet
+.. _iota_esp32_cashier: https://github.com/oopsmonk/iota_esp32_cashier
+.. _tangle_pigeon_esp32: https://github.com/oopsmonk/tangle_pigeon_esp32
+
 
 Getting Start 
 ---------------
