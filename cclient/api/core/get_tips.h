@@ -27,8 +27,8 @@ extern "C" {
 /**
  * @brief Returns a list of tips (transactions not referenced by other transactions).
  *
- * @param[in] service
- * @param[out] res
+ * @param[in] service client service
+ * @param[out] res A list of tip transactions.
  * @return #retcode_t
  */
 retcode_t iota_client_get_tips(iota_client_service_t const* const service, get_tips_res_t* const res);

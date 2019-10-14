@@ -28,7 +28,7 @@ extern "C" {
 /**
  * @brief Removes a list of neighbors from the connected IRI node.
  *
- * Assumes <b>removeNeighbors<b/> command is available on the node. This method has temporary effect until your IRI node
+ * Assumes removeNeighbors command is available on the node. This method has temporary effect until your IRI node
  * relaunches.
  *
  * The URI format:

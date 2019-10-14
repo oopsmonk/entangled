@@ -25,18 +25,6 @@ extern "C" {
 #endif
 
 /**
- * Store transactions into the local storage. The trytes to be used for this
- * call are returned by iota_client_attach_to_tangle.
- *
- * https://iota.readme.io/reference#storetransactions
- *
- * @param service IRI node end point.
- * @param req - Request containing the transactions to store
- *
- * @return The error value.
- */
-
-/**
  * @brief Store transactions in an IRI node's local storage.
  *
  * The trytes must be validated by #iota_client_attach_to_tangle
