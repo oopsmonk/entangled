@@ -16,11 +16,10 @@ Containing IOTA components, models as well as cryptography primitives used in IO
 
 Applications: 
 
-- Tanglescope: A monitoring tool for the Tangle
+- :doc:`cclient`: A low level IOTA client implementation
 - MAM: A low level implementation for MAM
 - CIRI: A low level implementation of IOTA node largely inspired by IRI
-- :doc:`cclient`: A low level IOTA client implementation
-
+- Tanglescope: A monitoring tool for the Tangle
 
 .. toctree::
    :maxdepth: 2
